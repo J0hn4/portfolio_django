@@ -88,9 +88,10 @@ p {
 
 .title-image {
   width: 60%;
-  transform: rotate(25deg);
+  transform: rotate(0deg);
   position: absolute;
   right: 30%;
+  margin-bottom: 20px;
 }
 
 /* Features Section */
@@ -183,5 +184,11 @@ p {
   .title-image {
     position: static;
     transform: rotate(0);
+    margin: auto;
   }
+}
+
+
+#projects_page {
+    background-color: #98fb98;
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 {% load static %}
+
 <head>
   <meta charset="utf-8">
   <title>Xavier Perez-Hall Portfolio</title>
@@ -32,7 +33,7 @@
 
       <nav class="navbar navbar-expand-lg">
 
-        <a class="navbar-brand" href="">XAVIER PEREZ-HALL</a>
+        <a class="navbar-brand">XAVIER PEREZ-HALL</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
             <span class="navbar-toggler-icon"></span>
@@ -42,13 +43,13 @@
 
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#footer">Contact</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#pricing">Pricing</a>
+              <a class="nav-link" href="#pricing">Featured Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#cta">Download</a>
+              <a class="nav-link" href="#resume">Resume</a>
             </li>
           </ul>
 
@@ -130,8 +131,9 @@
 
 
 <!--  section resume-->
+<section id="resume">
   <img id="resume-green" src="{% static 'portfolio/(green)XPH_Resume.jpg' %}" >
-
+</section>
 
 
   <br>
@@ -178,17 +180,17 @@
       <div class="carousel-inner">
         <div class="carousel-item active container-fluid">
           <h2 class="testimonial-text">Inspirational Dune Quote #1</h2>
-          <img class="testimonial-image" src="images/Dune_quotes/dune1.jpg" alt="dune1">
+          <img class="testimonial-image" src="{% static 'portfolio/Dune_quotes/dune1.jpg'  %}" alt="dune1">
         </div>
 
         <div class="carousel-item container-fluid">
           <h2 class="testimonial-text">Inspirational Dune Quote #2</h2>
-          <img class="testimonial-image" src="images/Dune_quotes/dune4.jpg" alt="dune2">
+          <img class="testimonial-image" src="{% static 'portfolio/Dune_quotes/fearisthemindkillerdune.jpg'  %}" alt="dune2">
         </div>
 
         <div class="carousel-item container-fluid">
           <h2 class="testimonial-text">Inspirational Dune Quote #3</h2>
-          <img class="testimonial-image" src="images/Dune_quotes/fearisthemindkillerdune.jpg" alt="dune3">
+          <img class="testimonial-image" src="{% static 'portfolio/Dune_quotes/dune4.jpg'  %}" alt="dune3">
         </div>
 
 
@@ -217,65 +219,65 @@
 
   <!-- Pricing -->
 
-  <section class="white-section" id="pricing">
+<!--  <section class="white-section" id="pricing">-->
 
-    <h2 class="section-heading">Portfolio</h2>
-    <p>_</p>
+<!--    <h2 class="section-heading">Portfolio</h2>-->
+<!--    <p>_</p>-->
 
-    <div class="row">
+<!--    <div class="row">-->
 
-      <div class="pricing-column col-lg-4 col-md-6">
-        <div class="card">
-          <div class="card-header">
-            <h3>Chihuahua</h3>
-          </div>
-          <div class="card-body">
-            <h2 class="price-text">Free</h2>
-            <p>5 Matches Per Day</p>
-            <p>10 Messages Per Day</p>
-            <p>Unlimited App Usage</p>
-            <button class="btn btn-lg btn-block btn-outline-dark" type="button">Sign Up</button>
-          </div>
-        </div>
-      </div>
+<!--      <div class="pricing-column col-lg-4 col-md-6">-->
+<!--        <div class="card">-->
+<!--          <div class="card-header">-->
+<!--            <h3>Chihuahua</h3>-->
+<!--          </div>-->
+<!--          <div class="card-body">-->
+<!--            <h2 class="price-text">Free</h2>-->
+<!--            <p>5 Matches Per Day</p>-->
+<!--            <p>10 Messages Per Day</p>-->
+<!--            <p>Unlimited App Usage</p>-->
+<!--            <button class="btn btn-lg btn-block btn-outline-dark" type="button">Sign Up</button>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
 
-      <div class="pricing-column col-lg-4 col-md-6">
-        <div class="card">
-          <div class="card-header">
-            <h3>Labrador</h3>
-          </div>
-          <div class="card-body">
-            <h2 class="price-text">$49 / mo</h2>
-            <p>Unlimited Matches</p>
-            <p>Unlimited Messages</p>
-            <p>Unlimited App Usage</p>
-            <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
-          </div>
-        </div>
-      </div>
+<!--      <div class="pricing-column col-lg-4 col-md-6">-->
+<!--        <div class="card">-->
+<!--          <div class="card-header">-->
+<!--            <h3>Labrador</h3>-->
+<!--          </div>-->
+<!--          <div class="card-body">-->
+<!--            <h2 class="price-text">$49 / mo</h2>-->
+<!--            <p>Unlimited Matches</p>-->
+<!--            <p>Unlimited Messages</p>-->
+<!--            <p>Unlimited App Usage</p>-->
+<!--            <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
 
-      <div class="pricing-column col-lg-4">
-        <div class="card">
-          <div class="card-header">
-            <h3>Mastiff</h3>
-          </div>
-          <div class="card-body">
-            <h2 class="price-text">$99 / mo</h2>
-            <p>Pirority Listing</p>
-            <p>Unlimited Matches</p>
-            <p>Unlimited Messages</p>
-            <p>Unlimited App Usage</p>
-            <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
+<!--      <div class="pricing-column col-lg-4">-->
+<!--        <div class="card">-->
+<!--          <div class="card-header">-->
+<!--            <h3>Mastiff</h3>-->
+<!--          </div>-->
+<!--          <div class="card-body">-->
+<!--            <h2 class="price-text">$99 / mo</h2>-->
+<!--            <p>Pirority Listing</p>-->
+<!--            <p>Unlimited Matches</p>-->
+<!--            <p>Unlimited Messages</p>-->
+<!--            <p>Unlimited App Usage</p>-->
+<!--            <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>-->
 
-          </div>
-        </div>
-      </div>
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
 
 
 
-    </div>
+<!--    </div>-->
 
-  </section>
+<!--  </section>-->
 
 
     <section class="white-section" id="pricing">
@@ -302,8 +304,7 @@
 
     <img src="{{ project.image.url }}" class="img-fluid mb-2">
     {% endif %}
-            <a href="{{ project.url }}" class="btn btn-lg btn-block btn-dark" type="button">Project Link</a>
-
+            <a href="projects/{{ project.id }}/" class="btn btn-lg btn-block btn-dark" type="button">Project Link</a>
           </div>
         </div>
       </div>
@@ -320,8 +321,8 @@
     <div class="container-fluid">
 
       <h3 class="big-heading">Looking forward to solving your programming needs.</h3>
-      <button class="download-button btn btn-lg btn-dark" type="button"><i class="fab fa-apple"></i> Download</button>
-      <button class="download-button btn btn-lg brn-light" type="button"><i class="fab fa-google-play"></i> Download</button>
+      <a href="https://www.apple.com/retail/" class="download-button btn btn-lg btn-dark" type="button"><i class="fab fa-apple"></i> Apple Store</a>
+      <a href="https://play.google.com/store/apps?gl=us" class="download-button btn btn-lg btn-light" type="button"><i class="fab fa-google-play"></i> Google Store</a>
     </div>
   </section>
 

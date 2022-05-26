@@ -1,0 +1,9 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+
+<h1>{{ project.title }} </h1>
+<img src="{{ project.image.url }}" alt="project image">
+{{ project.description }}
+{{ project.url }}
+
+{% endblock %}

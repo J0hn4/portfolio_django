@@ -1,0 +1,42 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+
+
+
+    <section class="white-section" id="pricing">
+
+    <h2 class="section-heading">Featured Portfolio</h2>
+    <p>__________________________</p>
+
+    <div class="row" id="projects-page">
+
+
+{% for project in projects %}
+      <div class="pricing-column col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>{{ project.title }}</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">{{ project.description }}</h2>
+            {% if project.url %}
+    <a href="{{ project.url }}">
+      <img src="{{ project.image.url }}" class="img-fluid mb-2">
+    </a>
+    {% else %}
+
+    <img src="{{ project.image.url }}" class="img-fluid mb-2">
+    {% endif %}
+            <a href="{{ project.url }}" class="btn btn-lg btn-block btn-dark" type="button">Project Link</a>
+
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+
+    </div>
+
+  </section>
+
+{% endblock %}
