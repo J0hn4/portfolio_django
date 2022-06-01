@@ -192,3 +192,9 @@ p {
 #projects_page {
     background-color: #98fb98;
 }
+
+
+.w-100 {
+  width: 100% !important;
+  height: 75vh;
+}

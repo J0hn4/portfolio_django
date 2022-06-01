@@ -3,7 +3,7 @@ from .models import Project
 
 # Create your views here.
 def home(request):
-    projects = Project.objects.all()
+    projects = Project.objects.order_by('-order_id')
     return render(request, 'portfolio/home.html', {'projects':projects})
 
 def about(request):
